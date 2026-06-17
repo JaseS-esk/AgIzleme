@@ -12,15 +12,26 @@
 
 Cisco Discovery Protocol (CDP) ve Link Layer Discovery Protocol (LLDP) paketlerini doğrudan ağ kartınız (Ethernet/Wi-Fi) üzerinden dinler, analiz eder ve şık bir arayüzle size sunar.
 
-![Ekran Görüntüsü](https://img.shields.io/badge/Aray%C3%BCz-React-blue?style=for-the-badge&logo=react)
-![Backend](https://img.shields.io/badge/Arka_Plan-Python-yellow?style=for-the-badge&logo=python)
+![Arayüz](https://img.shields.io/badge/Aray%C3%BCz-React-blue?style=for-the-badge&logo=react)
+![Arka Plan](https://img.shields.io/badge/Arka_Plan-Python-yellow?style=for-the-badge&logo=python)
+
+### 📸 Ekran Görüntüleri
+
+<div align="center">
+  <img src="screenshot1.png" alt="Ağ İzleme Arayüzü 1" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 20px;">
+</div>
+<div align="center">
+  <img src="screenshot2.png" alt="Ağ İzleme Arayüzü 2" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+</div>
+
+---
 
 ### ✨ Özellikler
 
 *   **Switch ve IP Tespiti:** Bağlı olduğunuz Switch'in adını ve yönetim IP adresini otomatik bulur.
 *   **Port ve VLAN Bilgisi:** Hangi switch portuna (`Gi1/0/1`, `Fa0/1` vb.) ve hangi VLAN ID'sine üye olduğunuzu gösterir.
 *   **Donanım Detayları:** Switch'in Chassis ID'sini (MAC adresi) ve tam işletim sistemi/model bilgisini analiz eder.
-*   **Raporlama:** Tek tıkla "Ekran Görüntüsü Al" özelliği sayesinde o anki ağ raporunuzu resim (.png) olarak kaydeder.
+*   **Raporlama:** Tek tıkla "Ekran Görüntüsü Al" özelliği sayesinde o anki ağ raporunuzu resim (.png) olarak doğrudan Masaüstünüze kaydeder.
 *   **Taşınabilir (Portable):** Kurulum gerektirmeyen tek bir `AgIzleme.exe` dosyası ile anında çalışır.
 
 ---
@@ -29,7 +40,7 @@ Cisco Discovery Protocol (CDP) ve Link Layer Discovery Protocol (LLDP) paketleri
 
 Yazılımın temel katmanda ağ trafiğini okuyabilmesi için sistemde **Npcap** sürücüsünün kurulu olması gerekmektedir. 
 
-1. **Ön Hazırlık:** Eğer bilgisayarınızda daha önceden Wireshark vb. bir program kurulu değilse, bu depodaki `npcap-installer.exe` dosyasını çalıştırarak Npcap sürücüsünü kurun. (Bu işlem sadece ilk kullanımda gereklidir).
+1. **Ön Hazırlık:** Eğer bilgisayarınızda daha önceden Wireshark vb. bir program kurulu değilse, bu depodaki `npcap-installer.exe` dosyasını çalıştırarak Npcap sürücüsünü kurun. *(Bu işlem sadece ilk kullanımda gereklidir).*
 2. **Çalıştırma:** `AgIzleme.exe` dosyasına çift tıklayın.
 3. **Dinleme:** Açılan arayüzden takılı olan Ağ Kartınızı seçin ve **Dinle** butonuna basın. (Kablo takılıysa veya switch cihazından paket geliyorsa saniyeler içinde veriler ekrana düşecektir.)
 
